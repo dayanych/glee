@@ -1,3 +1,14 @@
+@import 'vars';
+
 body{
-  
+  color: $default;
+  font-size: 15px;
+  line-height: 12px;
+  @extend %rubik-400;
+}
+
+.container{
+  max-width: 1780px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
