@@ -2,35 +2,48 @@
 $title: #436372;
 $default: #243f4d;
 $link: #7b7b7b;
+$button: #a3bbc8;
 
-
-%rubik-400{
-  font-family: 'Rubik-Regular', sans-serif;
+%rubik-400 {
+  font-family: "Rubik-Regular", sans-serif;
   font-weight: 400;
 }
-%rubik-500{
-  font-family: 'Rubik-Medium', sans-serif;
+%rubik-500 {
+  font-family: "Rubik-Medium", sans-serif;
   font-weight: 500;
 }
-%rubik-700{
-  font-family: 'Rubik-Bold', sans-serif;
+%rubik-700 {
+  font-family: "Rubik-Bold", sans-serif;
   font-weight: 700;
 }
 
-%dmsans-400{
-  font-family: 'DMSans-Regular', sans-serif;
+%dmsans-400 {
+  font-family: "DMSans-Regular", sans-serif;
   font-weight: 400;
 }
-%dmsans-500{
-  font-family: 'DMSans-Medium', sans-serif;
+%dmsans-500 {
+  font-family: "DMSans-Medium", sans-serif;
   font-weight: 500;
 }
-%dmsans-700{
-  font-family: 'DMSans-Bold', sans-serif;
+%dmsans-700 {
+  font-family: "DMSans-Bold", sans-serif;
   font-weight: 700;
 }
 
-%poppins-700{
-  font-family: 'Poppins-Bold', sans-serif;
+%poppins-700 {
+  font-family: "Poppins-Bold", sans-serif;
   font-weight: 700;
+}
+
+%btn {
+  background-color: $button;
+  border: none;
+  color: #fef7f0;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+%bg{
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -2,6 +2,7 @@
 @import "global";
 @import "fonts";
 @import "reset";
+@import "libs";
 
 .header {
   padding: 50px 0;
@@ -109,6 +110,82 @@
   }
 }
 
+.slider {
+  &__inner {
+    background-color: #fcd7b6;
+    padding: 210px 0 45px;
+    background-image: url(../images/slider-bg.png);
+    @extend %bg;
+    background-size: 35%;
+    background-position: right 15% center;
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 300px 210px;
+  }
+  &__content {
+    max-width: 430px;
+    height: 330px;
+  }
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    max-width: 370px;
+    margin-bottom: 45px;
+  }
+  &__link {
+    max-width: 200px;
+    height: 60px;
+    @extend %btn;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 19px 0 27px;
+    @extend %rubik-500;
+  }
+  &__img {
+    // max-width: 50%;
+    // height: 50%;
+  }
+}
+
+.slick-dots {
+  // margin-top: -45px;
+  display: flex;
+  justify-content: center;
+  li + li {
+    margin-left: 12px;
+  }
+  li {
+    button {
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-color: #fff;
+      opacity: 0.3;
+      border-radius: 50%;
+      padding: 8px 11px;
+    }
+  }
+  .slick-active{
+    button {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
 .footer {
   padding: 80px 0 43px;
 }
@@ -153,42 +230,38 @@
   }
   &__form-input {
     height: 40px;
-    width: 180px;
+    max-width: 180px;
     border: none;
     background-color: #fef7f0;
     padding: 0 15px;
-    &::placeholder{
-      color: #234969;    
+    &::placeholder {
+      color: #234969;
       font-size: 12px;
     }
   }
   &__form-button {
     height: 40px;
-    border: none;
-    background-color: #a3bbc8;
-    color: #fef7f0;
-    font-size: 14px;
-    padding: 0 20px;
+    @extend %btn;
   }
 }
-.footer-bottom{
+.footer-bottom {
   border-top: 1px solid #dae4e9;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   color: $link;
   padding-top: 35px;
-  &__list{
+  &__list {
     display: flex;
   }
   &__item {
     padding: 3px 0;
   }
-  &__item + &__item{
+  &__item + &__item {
     margin-left: 15px;
     border-left: 1px solid $link;
     padding-left: 15px;
   }
-  &__link{
+  &__link {
     color: $link;
   }
 }
