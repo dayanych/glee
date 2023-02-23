@@ -9,6 +9,7 @@
   "author": "Dayana",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/ui": "^5.0.1",
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-image": "^6.3.1",

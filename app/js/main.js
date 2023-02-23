@@ -4,3 +4,7 @@ $(function(){
     dots: true,
   })
 })
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
