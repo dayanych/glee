@@ -8,3 +8,5 @@ $(function(){
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+
+var mixer = mixitup('.products');
