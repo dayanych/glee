@@ -1,11 +1,11 @@
 @import 'vars';
 
 html,
-body{
+body {
   height: 100%;
 }
 
-body{
+body {
   color: $default;
   font-size: 15px;
   line-height: 12px;
@@ -14,12 +14,35 @@ body{
   flex-direction: column;
 }
 
-.main{
+.main {
   flex-grow: 1;
 }
 
-.container{
+.container {
   max-width: 1780px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.button__mix {
+  cursor: pointer;
+  margin-top: 35px;
+  margin-bottom: 85px;
+  border: none;
+  background-color: transparent;
+  color: #8b8b8b;
+  @extend %dmsans-700;
+  transition: all 0.5s;
+
+  &:hover {
+    color: #191919;
+  }
+}
+
+.button__mix+.button__mix {
+  margin-left: 30px;
+}
+
+.mixitup-control-active {
+  color: #191919;
 }
