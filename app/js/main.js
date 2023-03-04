@@ -1,7 +1,15 @@
-$(function(){
+$(function () {
   $(".slider__inner").slick({
     arrows: false,
     dots: true,
+  })
+  $(".partners__list").slick({
+    arrows: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    swipeToSlide: true,
   })
 })
 
