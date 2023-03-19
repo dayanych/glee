@@ -42,6 +42,7 @@ $bg: #fcd7b6;
 }
 
 %btn {
+  cursor: pointer;
   background-color: $button;
   border: none;
   color: #fef7f0;
@@ -52,4 +53,12 @@ $bg: #fcd7b6;
 %bg{
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+%checkbox-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }

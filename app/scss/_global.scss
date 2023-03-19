@@ -28,7 +28,7 @@ body {
   padding: 0 10px;
 }
 
-a{
+a {
   color: inherit;
 }
 
@@ -47,7 +47,7 @@ a{
   }
 }
 
-.button__mix+.button__mix {
+.button__mix + .button__mix {
   margin-left: 30px;
 }
 
@@ -61,28 +61,52 @@ a{
   font-size: 36px;
 }
 
-.breadcrumbs{
+.breadcrumbs {
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  &__list{
+  &__list {
     display: flex;
   }
-  &__item{
+  &__item {
     margin-right: 9px;
-    &::after{
+    &::after {
       content: '/';
       margin-left: 8px;
       color: #737980;
     }
-    &:last-child{
+    &:last-child {
       margin-right: 0;
-      &::after{
+      &::after {
         display: none;
       }
     }
   }
-  &__link{
+  &__link {
     color: #737980;
   }
+}
+
+.pagination{
+  &__list{
+    display: flex;
+    column-gap: 15px;
+  }
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $button;
+    &--active{
+      background-color: $button;
+      color: #fff;
+    }
+    &:last-child{
+      width: auto;
+      padding: 0 20px;
+    }
+  }
+
 }
